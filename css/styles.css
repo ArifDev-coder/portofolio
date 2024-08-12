@@ -1,0 +1,408 @@
+:root {
+  --bg: #010101;
+  --primary: #0d969b;
+  --second: #006a85;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+body {
+  font-family: poppins, sans-serif;
+  background-color: var(--bg);
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== HOME PAGE ===== */
+/* Navbar */
+.navbar {
+  position: fixed;
+}
+.navbar {
+  display: flex;
+  background-color: rgba(1, 1, 1, 0.8);
+  padding: 3rem;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid var(--second);
+  border-top: 1px solid var(--second);
+  font-size: 23px;
+  z-index: 1000;
+}
+.navbar .navbar-items a {
+  margin: 0 1rem;
+}
+.navbar .navbar-items {
+  margin-left: 40rem;
+}
+.navbar .judul {
+  font-size: 30px;
+  cursor: default;
+  font-style: italic;
+  font-weight: bold;
+}
+.navbar a {
+  color: white;
+}
+/* .navbar .navbar-items a:hover {
+  color: var(--second);
+} */
+.navbar .navbar-items a:not(:hover) {
+  opacity: 80%;
+}
+.navbar .navbar-extra #menu {
+  display: none;
+}
+
+/* Hero Section */
+
+.hero {
+  background-image: url("../img/rahul-mishra-o4SzxPgMwV8-unsplash.jpg");
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
+  margin-bottom: 5rem;
+}
+.hero .content h1 {
+  color: var(--primary);
+  text-shadow: 1px 1px 1px white;
+}
+.hero .content {
+  position: fixed;
+  top: 15rem;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bolder;
+}
+.hero .content p {
+  margin-top: 1.2rem;
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: whitesmoke;
+  font-weight: lighter;
+  padding: 50px;
+}
+
+/* Hero Section-2 */
+
+.hero-2 {
+  align-items: center;
+  text-align: center;
+}
+.hero-2 h1 {
+  margin-bottom: 5rem;
+  font-size: 5rem;
+  font-style: italic;
+  color: var(--second);
+  text-shadow: 1px 1px 1px white;
+}
+.hero-2 .img-judul img {
+  width: 30rem;
+  border-radius: 30%;
+  border: 2px solid var(--second);
+}
+.hero-2 .img-isi img:hover {
+  opacity: 0.5;
+}
+.hero-2 .img-isi .gambar {
+  width: 17rem;
+  margin: 8rem 5rem;
+}
+.hero-2 .isi-text {
+  font-size: 2rem;
+  padding: 50px;
+  text-align: justify;
+}
+.hero-2 .isi-text .html {
+  color: red;
+}
+.hero-2 .isi-text .css {
+  color: rgb(47, 147, 240);
+}
+.hero-2 .isi-text .php {
+  color: rgb(68, 16, 165);
+}
+.hero-2 .isi-text .js {
+  color: yellow;
+}
+.hero-2 .isi-text .sheet {
+  color: rgb(0, 255, 13);
+}
+.hero-2 .isi-text .py {
+  color: #0400ff;
+}
+.hero-2 .isi-text .s {
+  font-size: 3rem;
+}
+/* CONTACT */
+.contact-section {
+  width: 100%;
+  padding: 10rem 10rem;
+  background: linear-gradient(#0d969b, #0d969b) padding-box, linear-gradient(145deg, transparent 40%, #010101, #006a85) border-box;
+  border: 2px solid transparent;
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  border-radius: 16px;
+  gap: 20px;
+}
+.contact-section h1 {
+  font-size: 5rem;
+  color: var(--second);
+  text-shadow: 1px 1px 1px white;
+}
+.contact-section .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-section button:active {
+  scale: 0.8;
+}
+.contact-section .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.contact-section .form-group label {
+  display: block;
+  margin-bottom: 1.7rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.contact-section .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #efefef;
+}
+.contact-section .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 10rem;
+  border: 1px solid #efefef;
+  background-color: transparent;
+}
+.contact-section .form-group input::placeholder {
+  opacity: 0.95;
+}
+.contact-section .form-group input:focus,
+.contact-section .form-group textarea:focus {
+  outline: none;
+  border-color: #0011ff;
+}
+.contact-section .submit {
+  text-align: center;
+  color: #efefef;
+  font-weight: 700;
+  width: 10rem;
+  background: var(--second);
+  border: 1px solid #efefef;
+  padding: 6px 16px;
+  gap: 10px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.contact-section .submit:hover {
+  background-color: #0d103d;
+}
+.contact-section .my-alert {
+  padding: 1rem;
+  justify-content: space-between;
+  background-color: var(--second);
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.contact-section .icon a {
+  color: white;
+}
+.contact-section .icon a:hover {
+  opacity: 60%;
+}
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+/* copyright */
+footer .copyright {
+  position: relative;
+  font-size: 1.4rem;
+  padding: 2.5rem;
+  background-color: var(--second);
+  margin-top: 4rem;
+  bottom: 0;
+  text-align: center;
+}
+/* project */
+.project {
+  display: flex;
+  background-color: var(--bg);
+  padding: 17rem;
+}
+.project h1 {
+  font-style: italic;
+  font-size: 7rem;
+  color: var(--second);
+  text-shadow: 1px 1px 1px white;
+  margin-bottom: 5rem;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.project .project-container .projects {
+  align-items: left;
+  justify-content: left;
+  font-size: 2rem;
+  gap: 3rem;
+}
+.project .project-container .projects .project-item {
+  margin-bottom: 10rem;
+  border: 5px solid #efefef;
+  border-radius: 3rem;
+}
+.project .project-item img {
+  width: 70%;
+  border-radius: 1rem;
+  border: 5px solid var(--primary);
+  margin: 1.5rem;
+}
+.project .project-item .gambar {
+  text-align: center;
+}
+.project .project-container .project-item .project-icon a {
+  color: #efefef;
+  margin-left: 1.5rem;
+  margin-right: 1.2rem;
+}
+.project .project-container .project-item .project-icon {
+  text-align: end;
+}
+.project .project-container .project-item .project-info {
+  padding: 1.2rem;
+}
+.project .project-container .project-item .project-info h2 {
+  text-align: center;
+  color: #0011ff;
+  text-shadow: 1px 1px 1px white;
+}
+.project .project-container .project-item .project-info p {
+  color: #9899b9;
+}
+.project .project-container .project-item .project-icon a:not(:hover){
+  opacity: 80%;
+}
+/* MEDIA QUERIES */
+/* dekstop */
+@media (max-width: 1920px){
+  .project{
+    padding: 24rem;
+  }
+}
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* Tablet */
+@media (max-width: 1024px) {
+  .navbar .navbar-items {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgba(1, 1, 1, 0.9);
+    border: 1px solid var(--second);
+    width: 30rem;
+    height: 20rem;
+    transition: 0.3s;
+    border-radius: 1.4rem;
+  }
+  .navbar .navbar-items.active {
+    right: 0;
+  }
+  .navbar .navbar-extra #menu {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  .navbar .navbar-extra #menu:hover {
+    opacity: 80%;
+  }
+  .navbar .navbar-items a {
+    display: flex;
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 62.5%;
+  }
+  .navbar .judul {
+    font-size: 23px;
+  }
+  .navbar .navbar-items {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgba(1, 1, 1, 0.9);
+    border: 1px solid var(--second);
+    width: 30rem;
+    height: 20rem;
+    transition: 0.3s;
+    border-radius: 1.4rem;
+  }
+  .navbar .navbar-items.active {
+    right: 0;
+  }
+  .navbar .navbar-extra #menu {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  .navbar .navbar-extra #menu:hover {
+    opacity: 80%;
+  }
+  .navbar .navbar-items a {
+    display: flex;
+    margin-bottom: 4rem;
+  }
+  /* .navbar .navbar-items .by{
+    margin-top: 30rem;
+    text-align: center;
+    font-size: 14px;
+  } */
+  .contact-section h1 {
+    font-size: 30px;
+  }
+  .project .project-container {
+    font-size: 2rem;
+  }
+  .project {
+    padding: 7rem;
+  }
+  /* .project .project-container .projects .project-item img{
+    width: 28rem;
+  } */
+}
+/* Mobile */
+@media (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
+}
