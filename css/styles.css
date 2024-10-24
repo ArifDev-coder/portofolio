@@ -154,7 +154,6 @@ html {
   display: flex;
   font-size: 14px;
   flex-direction: column;
-  border-radius: 16px;
   gap: 20px;
 }
 .contact-section h1 {
